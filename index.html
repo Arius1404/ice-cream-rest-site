@@ -7,6 +7,9 @@
 	<title>
 		I ICE YOU - кафе крафтового мороженого
 	</title>
+	<script src="jquery-3.4.1.min.js"></script>
+	<script src="main.js"></script>
+	
 	<link rel=stylesheet href=main.css>
 	<link rel="icon" href="Pictures/favicon.ico" type="image/ico">
 	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
@@ -18,6 +21,7 @@
 	
 </head>
 	<body>
+	<a href=# class=up><i class="fa fa-arrow-circle-up fa-fw"></i></a>
 		<div id=container>
 			
 			<!--<div id=header> </div>-->
@@ -46,34 +50,45 @@
 
 			</div>
 			
+			<div class=rest_title>
+				<span class=first_title>I ICE YOU</span><br>
+				<span class=second_title>Loft - кафе крафтового мороженого</span>
+			</div>
 			
 			<!--<div class=sidebar>САЙДБАР </div>-->
 			
 			<div class=content> 			
 			
 					<div id=first_section class=section> </div>
-					<span class=phrase_1>ВАМ СТОИТ ЭТО ПОПРОБОВАТЬ! </span>
-					<span class=phrase_2>Это так вкусно </span>
-					<span class=phrase_3>Не обещаем ничего, кроме вкуснейшего мороженого, уютной атмосферы и завораживающего вида на океан</span>
-					<div id=second_section class=section> </div>
+					<span class=phrases_left>
+						<span class=phrase_first>ВАМ СТОИТ ЭТО ПОПРОБОВАТЬ! </span>
+						<span class=phrase_second>Это так вкусно </span>
+						<span class=phrase_third>Не обещаем ничего, кроме вкуснейшего мороженого, уютной атмосферы и завораживающего вида на океан</span>
 						<a id=btn_menu class=btn href="menu.html" target="_self">
 							<span id=btn_menu_text>ХОЧУ!</span>  
 						</a>
+					</span>
+					<div id=second_section class=section> </div>
 					<div id=third_section class=section> </div>
-					<span class=phrase_4>ЗАБУДЬТЕ ПРО СТЕРЕОТИПЫ! </span>
-					<span class=phrase_5>Кто сказал, что мороженое не может быть тортом, как и торт - мороженым?! </span>
-					<span class=phrase_6>Уже более 10 лет наши мастера доказывают, что кухня - место, где властвует фантазия</span>
-					<div id=fourth_section class=section> </div>
-					<a id=btn_about class=btn href="about.html" target="_self">
+					<span class=phrases_right>
+						<span class=phrase_first>ЗАБУДЬТЕ ПРО СТЕРЕОТИПЫ! </span>
+						<span class=phrase_second>Кто сказал, что мороженое не может быть тортом, как и торт - мороженым?! </span>
+						<span class=phrase_third>Уже более 10 лет наши мастера доказывают, что кухня - место, где властвует фантазия</span>
+						<a id=btn_about class=btn href="about.html" target="_self">
 							<span id=btn_abt_text>О НАС</span>  
 						</a>
+					</span>
+					<div id=fourth_section class=section> </div>
+					
 					<div id=fifth_section class=section> </div>
+					<span class=phrases_left>
+						<span class=phrase_first>НАСЛАЖДАЙТЕСЬ! </span>
+						<span class=phrase_second>Что может быть лучше, вкусного мороженого?!</span>
+						<span class=phrase_third>Только вкусное мороженое в приятной компании!</span>
 						<a id=btn_events class=btn href="#" target="_self">
 							<span id=btn_events_text>СОБЫТИЯ</span>
 						</a>
-						<span class=phrase_7>НАСЛАЖДАЙТЕСЬ! </span>
-						<span class=phrase_8>Что может быть лучше, вкусного мороженого?!</span>
-						<span class=phrase_9>Только вкусное мороженое в приятной компании!</span>
+					</span>
 					<div id=sixth_section class=section> </div>
 					<div id=seventh_section class=section> </div>
 					
@@ -88,7 +103,7 @@
 				</div>
 				<div class=contacts><h1>КОНТАКТЫ </h1>
 					<div class=subcont>tahteev.ilya@gmail.com </div>
-					<div class=subcont_2>Тел. 8(983)233-49-23 </div>
+					<div class=subcont_2>Тел. 8 (983) 233-49-23 </div>
 				</div>
 				<div class=time><h1>ЧАСЫ РАБОТЫ</h1>
 					<div class=subtime>Ежедневно 10:00 - 23:00 </div>
@@ -98,6 +113,7 @@
 				</div>
 			
 		</div>
+		
 	</body>
 	
 	
