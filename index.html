@@ -7,22 +7,58 @@
 	<title>
 		I ICE YOU - кафе крафтового мороженого
 	</title>
+	<script type="text/javascript"></script>
 	<script src="jquery-3.4.1.min.js"></script>
+	<script src="jquery-ui.min.js"></script>
 	<script src="main.js"></script>
 	
 	<link rel=stylesheet href=main.css>
 	<link rel="icon" href="Pictures/favicon.ico" type="image/ico">
 	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700&display=swap&subset=cyrillic" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=cyrillic" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Exo:700&display=swap" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Amatic+SC:700&display=swap&subset=cyrillic" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&display=swap&subset=cyrillic" rel="stylesheet"> 
-	<link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap&subset=cyrillic" rel="stylesheet"> 
 	
 </head>
 	<body>
-	<a href=# class=up><i class="fa fa-arrow-circle-up fa-fw"></i></a>
+	<a class=up><i class="fa fa-arrow-circle-up fa-fw"></i></a>
+	
+	<div class=callback_btn><i class="fa fa-phone fa-fw"></i></div>
+	
 		<div id=container>
+		
+			<div class=overlay></div>
+			<div id=popup_wrap>
+				<div class=popup id=popup_mod>
+					<div class=msg>
+						<i class="fa fa-times-circle fa-2x"></i>
+						<div class=tous>
+							<form method= "">
+								<div class=msg_text>
+									ОСТАВЬТЕ СВОЙ ТЕЛЕФОН, И МЫ ВАМ ОБЯЗАТЕЛЬНО ПЕРЕЗВОНИМ
+								</div>
+								Ваш телефон:
+							<input type="tel" required placeholder="8-800-555-35-35" pattern="8-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+							Как к Вам обращаться:
+							<input type= "text" name= "name" required placeholder="Алексей Викторович" pattern="[А-Яа-я]{3,}"> 
+							<input type="submit" value="ОСТАВИТЬ ЗАЯВКУ">
+								
+							</a></span>
+							</form>
+						</div>
+						<div class=splitter_horiz></div>
+						<div class=we>
+							<div class=msg_text>ИЛИ ПОЗВОНИТЕ НАМ САМИ!
+							<div class=comp_tel>8-983-233-49-23</div>
+						</div>
+						
+						</div>
+					</div>
+				</div>
+			</div>
+		
 			
 			<!--<div id=header> </div>-->
 			
@@ -33,16 +69,17 @@
 					<li> <a href=menu.html>МЕНЮ</a></li>
 					<li> <a href=#>СОБЫТИЯ</a></li>
 					<li> <a href=about.html>О НАС</a></li>
+					<li> <a class=show >БРОНЬ</a> </li>
 				</ul>
 				
 				<ul class="menu topLeft">
 				  <li class="share bottom">
 					<i class="fa fa-share-alt"></i>
 						<ul class="submenu">
-						<li><a href="#" class="facebook"><i class="fa fa-facebook" target=blank></i></a></li>
-						<li><a href="#" class="twitter"><i class="fa fa-twitter" target=blank></i></a></li>
-						<li><a href="#" class="googlePlus"><i class="fa fa-google-plus" target=blank></i></a></li>
-						<li><a href="https://www.instagram.com/sashavysotska/" class="instagram" target=blank><i class="fa fa-instagram"></i></a></li>
+						<li><a href="https://vk.com/vssashaa" rel="external" class="vk"><i class="fa fa-vk"></i></a></li>
+						<li><a href="#" rel="external" class="whatsapp"><i class="fa fa-whatsapp"></i></a></li>
+						<li><a href="#" rel="external" class="youtube"><i class="fa fa-youtube"></i></a></li>
+						<li><a href="https://www.instagram.com/sashavysotska/" rel="external" class="instagram"><i class="fa fa-instagram"></i></a></li>
 						</ul>
 					</li>
 				</ul>
@@ -51,8 +88,10 @@
 			</div>
 			
 			<div class=rest_title>
-				<span class=first_title>I ICE YOU</span><br>
-				<span class=second_title>Loft - кафе крафтового мороженого</span>
+				<a class=toIndex href=index.html>
+					<span class=first_title>I ICE YOU</span><br>
+					<span class=second_title>Loft - кафе крафтового мороженого</span>
+				</a>
 			</div>
 			
 			<!--<div class=sidebar>САЙДБАР </div>-->
@@ -94,7 +133,24 @@
 					
 			</div>
 			
+			<div id=slider_wrap>
+				<div class="sim-slider">
+					<ul class="sim-slider-list">
+						<li><img src="http://pvbk.spb.ru/inc/slider/imgs/no-image.gif" alt="screen"></li> <!-- это экран -->
+						<li class="sim-slider-element"><img src="http://pvbk.spb.ru/inc/slider/imgs/planet0.jpg" alt="0"></li>
+						<li class="sim-slider-element"><img src="http://pvbk.spb.ru/inc/slider/imgs/planet1.jpg" alt="1"></li>
+						<li class="sim-slider-element"><img src="http://pvbk.spb.ru/inc/slider/imgs/planet2.jpg" alt="2"></li>
+						<li class="sim-slider-element"><img src="http://pvbk.spb.ru/inc/slider/imgs/planet3.jpg" alt="3"></li>
+						<li class="sim-slider-element"><img src="http://pvbk.spb.ru/inc/slider/imgs/planet4.jpg" alt="4"></li>
+						<li class="sim-slider-element"><img src="http://pvbk.spb.ru/inc/slider/imgs/planet5.jpg" alt="5"></li>
+					</ul>
+					<div class="sim-slider-arrow-left"></div>
+					<div class="sim-slider-arrow-right"></div>
+					<div class="sim-slider-dots"></div>
+				</div>
+			</div>
 			
+			<script>new Sim()</script>
 			
 			<div class=footer>
 				<div class=address><h1> АДРЕС </h1>
@@ -113,6 +169,9 @@
 				</div>
 			
 		</div>
+		
+		
+		
 		
 	</body>
 	
